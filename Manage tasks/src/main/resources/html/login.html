@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Login-page</title>
@@ -17,15 +17,30 @@
   </nav>
   <div class="container">
       <h1>Login</h1>
-      < form id="loginForm">
+      <form id="loginForm">
       <div><label for="username">Username</label>
          <input type="text" id="username" name="username" required>
       </div>
+
+          <div id="aboutAuthor" class="author">
+              <div class="author-content">
+
+                  <span class="close" onclick="closeAboutAuthor()">&times;</span>
+
+                  <img src="monimage.jpg" alt="Author Image">
+                    <p>About the author content...</p>
+              </div>
+          </div>
+
+          <sript src="/javascript/app.js"></sript>
 
       <div>
           <label for="password">Password:</label>
           <input type="password" id="password" name="password" required>
       </div>
+
+      <button type="submit">Login</button>
+      </form>
   </div>
 </body>
 </html>
