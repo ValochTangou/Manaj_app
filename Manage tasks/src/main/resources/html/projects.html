@@ -2,9 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Projects</title>
 </head>
 <body>
 
+ <nav>
+     <ul>
+         <li><a href="tasks.html">Tasks</a> </li>
+         <li><a href="issues.html">Issues</a> </li>
+         <li><a href="communication.html">Communication</a> </li>
+         <li><a href="workflow.html">Workflow</a> </li>
+         <li><a href="#" onclick="openAboutAuthor()">About Author</a> </li>
+         <li><a href="#" onclick="openAboutApp()">About App</a> </li>
+
+     </ul>
+ </nav>
+
+<div class="container">
+    <h1>Projects</h1>
+    <div id="projectList"></div>
+    <button id="createProjectBtn">Create New project</button>
+
+</div>
+
+<div id="aboutAuthor" class="author">
+    <div class="author-content">
+        <span class="close" onclick="closeAboutAuthor()">&times;</span>
+        <img src="Monimage.jpg" alt="Author image">
+        <p>About the author content</p>
+
+    </div>
+
+</div>
+
+<div id="aboutApp" class="app">
+    <div class="app-content">
+    <span class="close" onclick="closeAboutApp()">&times;</span>
+    <p>About the app content</p>
+</div>
+</div>
+
+<script src="?javascript/app.js"></script>
 </body>
 </html>
